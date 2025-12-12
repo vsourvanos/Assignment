@@ -1,6 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .image a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav .nav-links {
+    float: right;
+    margin-right: 20px;
+}
+
+nav .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav .nav-links li a {
+    color: #fcfbfb;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Gym Section */
+#Gym {
+    background-image: url('/Users/ambiguous/Downloads/anastase-maragos-9dzWZQWZMdE-unsplash.jpg'); /* Replace with a real image */
+    background-size: cover;
+    color: #f7f3f3;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#Gym h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#Gym p {
+    font-size: 24px;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transformers Gym</title>
@@ -13,7 +144,7 @@
                 <img src="/Users/ambiguous/Downloads/images.jpeg" alt="Transformers Gym Logo" width="50" height="50">
                 <h1>Transformers Gym</h1>
             </div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="Assignment.html">Home</a></li>
                 <li><a href="activities.html">Activities</a></li>
                 <li><a href="History.html">History</a></li>
@@ -22,9 +153,14 @@
         </nav>
     </header>
     <section id ="Gym">
+          
         <h2>Activities</h2>
         <div class="Gym-list">
-            <div class="Gym-item">
+            <img src="/Users/ambiguous/Downloads/IMG_2215.jpg" alt="Main hall" width="500" height="500">
+            <img src="/Users/ambiguous/Downloads/IMG_2213.jpg" alt="Main hall reverse" width="500" height="500">
+            <img src="/Users/ambiguous/Downloads/IMG_2222.jpg" alt="Sidewalk" width="500" height="500">
+            <img src="/Users/ambiguous/Downloads/IMG_2223.jpg" alt="Locker room" width="500" height="500">
+                
                 <h3>Our Gym and Activities</h3>
                 <p>This is our gym and thats what we do</p>
                 <a href="activities.html" class="btn">View Details</a>
@@ -32,7 +168,12 @@
             </section>
             <section id="About">
                 <h2>About Transformers Gym</h2>
-                <p>Transformers Gym</p>
+                <p>At Transformers Gym,we help you become</br>
+                    the strongest version of yourself. </br>
+                    With modern equipment, expert trainers,</br>
+                    and a supportive , motivated , community,</br>
+                    we are here to support you on your fitness journey.</br>
+                    One transformation at a time.</p>
             </section>
             <section id="Contact">
                 <h2>Contact Us</h2>
